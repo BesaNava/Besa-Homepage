@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  background-color: #ffffcc; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+header {
+    background-color: #ffffcc; 
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    color: #ff99cc; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff99cc; 
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #FF69B4; 
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    margin: 0px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    width: 150px; 
+    height: auto; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.clouds {
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+}
+
+.cloud {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    animation: moveCloud 20s linear infinite, moveCloudReverse 25s linear infinite;
+}
+
+@keyframes moveCloud {
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc(50% + 100px);
+    }
+}
+
+@keyframes moveCloudReverse {
+    from {
+        left: calc(100% + 200px);
+    }
+    to {
+        left: -200px;
+    }
+}
