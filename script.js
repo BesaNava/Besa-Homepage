@@ -1,2 +1,2 @@
 let element_title = document.getElementById('title');
-element_title.style.color = 'purple'
+element_title.style.color = 'purple';
